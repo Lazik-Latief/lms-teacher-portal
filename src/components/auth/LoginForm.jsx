@@ -3,9 +3,11 @@
 import { useState } from "react";
 import InputField from "./InputField";
 import PasswordField from "./PasswordField";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,6 +44,8 @@ export default function LoginForm() {
       </div>
 
       <button
+         onClick={() => router.push("/dashboard")}
+         
         type="submit"
         className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-xl transition-all"
       >
