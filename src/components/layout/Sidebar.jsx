@@ -16,8 +16,8 @@ import {
 const navItems = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { name: "My Courses", href: "/courses", icon: BookOpen },
-  { name: "Students", href: "/students", icon: Users },
-  { name: "Reports", href: "/assignments", icon: BarChart3 },
+  { name: "Assignments", href: "/assignments", icon: Users },
+  { name: "Reports", href: "/reports", icon: BarChart3 },
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 

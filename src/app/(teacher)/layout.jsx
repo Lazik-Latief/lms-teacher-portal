@@ -33,7 +33,10 @@ export default function TeacherLayout({ children }) {
   const pathname = usePathname();
 
   // Hide header on courses page
-  const hideHeader = pathname.startsWith("/courses");
+  // const hideHeader = pathname.startsWith("/courses");
+   const hideHeader =
+    pathname.startsWith("/assignments") ||
+    pathname.startsWith("/courses");
 
   return (
     <div className="min-h-screen bg-[#0b0f17] text-white flex">
