@@ -12,7 +12,8 @@ export default function TeacherLayout({ children }) {
   // const hideHeader = pathname.startsWith("/courses");
    const hideHeader =
     pathname.startsWith("/assignments") ||
-    pathname.startsWith("/courses");
+    pathname.startsWith("/courses") ||
+    pathname.startsWith("/analytics");
 
   return (
     <div className="min-h-screen bg-[#0b0f17] text-white flex">
