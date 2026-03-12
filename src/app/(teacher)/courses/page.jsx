@@ -1,4 +1,6 @@
+'use client'
 import CourseCard from "@/components/courses/CourseCard";
+import Header from "@/components/layout/Header";
 
 const courses = [
   {
@@ -43,7 +45,7 @@ export default function CoursesPage() {
   return (
     <div className="px-8 py-8 space-y-10">
 
-      {/* HEADER (similar to header.jsx style) */}
+      {/* HEADER (similar to header.jsx style)
       <div className="flex items-center justify-between border-b border-yellow-400/10 pb-6">
 
         <div>
@@ -60,7 +62,17 @@ export default function CoursesPage() {
           + Create Course
         </button>
 
-      </div>
+      </div> */}
+
+      <Header
+        title="My Courses"
+        subtitle="Manage your classes, batches and lectures"
+        primaryAction={{
+          label: "Create Course",
+          icon: "➕",
+          onClick: () => console.log("Create Course"),
+        }}
+      />
 
 
       {/* STATS */}
